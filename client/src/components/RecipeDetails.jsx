@@ -59,7 +59,7 @@ export default function RecipeDetails(props) {
 
             <div className="ddsh">
                 <h3 className="texts">Summary: </h3>
-                <p className="summary">{recipeDetails.summary?.replace(/<[^>]*>/g, '')}</p>
+                <p className="summary">{recipeDetails.summary?.replace()}</p>
             </div>
             
             <div className="ddsh">

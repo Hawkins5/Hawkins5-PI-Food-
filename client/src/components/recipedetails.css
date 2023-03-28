@@ -1,6 +1,6 @@
 .backButton {
     color: rgb(231, 218, 218);
-    background-color: #ce5249;
+    background-color: #1fb97e;
     font-size: 17px;
     text-align: center;
     padding: 10px 25px;
@@ -11,7 +11,7 @@
 }
 
 .backButton:hover {
-    color:#ce5249;
+    color:#23ba76;
     background-color: rgb(231, 218, 218);
 }
 
@@ -44,7 +44,7 @@
 .detailImg {
     margin: 5px;
     display: flex;   
-    box-shadow: 3px 3px 5px 1px rgb(112, 44, 44);
+    box-shadow: 3px 3px 5px 1px rgb(21, 169, 112);
     width: 400px;
     height: 250px
 }
@@ -67,7 +67,7 @@
     font-style: italic;
       
     text-shadow: 6px 4px 5px rgba(0,0,0,0.43);
-    box-shadow: 3px 3px 5px 1px rgb(112, 44, 44);
+    box-shadow: 3px 3px 5px 1px rgb(18, 166, 105);
     background-color: rgb(231, 218, 218, 0.3);
     
 }
@@ -85,7 +85,7 @@
     font-style: italic;
     text-shadow: 6px 4px 5px rgba(0,0,0,0.43);
     border-radius: 3px;
-    box-shadow: 3px 3px 5px 1px rgb(112, 44, 44);
+    box-shadow: 3px 3px 5px 1px rgb(14, 153, 125);
     background-color: rgb(231, 218, 218, 0.3);
 }
 

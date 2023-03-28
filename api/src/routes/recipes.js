@@ -2,7 +2,7 @@ const { Router } = require('express');
 const axios = require('axios');
 const { getApiById, getAllRecipes, getDbById} = require('../Controllers/recipes');
 const { Recipe, Diet } = require('../db');
-const { API_KEY } = process.env;
+const { API_KEY, API_KEY1} = process.env;
 
 const router = Router();
 
@@ -48,7 +48,7 @@ router.get('/', async (req, res, next) => {
 router.get('/:id', async (req, res, next) => {    
     const { id } = req.params  
     try {
-        if (/^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$/.test(id)) {
+        if (/^[0-9A-F]{8}-[0-9A-F]{4}-[1][0-9A-F]{3}-[89AB][0-9A-F]{3}-[0-9A-F]{12}$/.test(id)) {
             let dbRecipesById = await getDbById(id);            
             return res.status(200).json(dbRecipesById)
         } else { 
