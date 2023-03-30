@@ -1,5 +1,4 @@
 const { Router } = require('express');
-const axios = require('axios');
 const { getApiById, getAllRecipes, getDbById} = require('../Controllers/recipes');
 const { Recipe, Diet } = require('../db');
 const { API_KEY, API_KEY1} = process.env;
